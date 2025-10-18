@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курьянов Николай Алексеевич - Резюме</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .job {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .job-period {
+            color: #666;
+            font-size: 0.95em;
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .company {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .subsection-title {
+            font-weight: bold;
+            color: #764ba2;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .about-text {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Курьянов Николай Алексеевич</h1>
+            <div class="subtitle">QA Engineer / Performance Tester</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    +7 (987) 874-77-48
+                </div>
+                <div class="contact-item">
+                    nikolaykuryanov2004@gmail.com
+                </div>
+                <div class="contact-item">
+                    Санкт-Петербург • 21 год
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">👨‍💻 О себе</h2>
+                <div class="about-text">
+                    Специалист в области <span class="highlight">нагрузочного тестирования и автоматизации QA-процессов</span> с опытом backend-разработки и преподавания.
+                    Обладаю более чем 2 годами опыта преподавания дисциплины «Алгоритмы и структуры данных» и 6 месяцами коммерческой разработки на <span class="highlight">Python, C# и Java</span>.
+                    <br><br>
+                    Специализируюсь на разработке средств эмуляции, проведении нагрузочного тестирования с использованием <span class="highlight">LoadRunner</span>,
+                    анализе производительности систем и формировании детальных отчетов. Имею опыт работы с <span class="highlight">PostgreSQL, MS SQL</span>,
+                    мониторингом производительности на <span class="highlight">Windows и Linux</span>.
+                    <br><br>
+                    Сочетаю техническую экспертизу с развитыми soft skills: аналитическое мышление, системный подход к решению задач,
+                    эффективную коммуникацию в команде и способность быстро осваивать новые технологии.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">💼 Опыт работы</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">QA Engineer / Backend Developer</div>
+                            <div class="company">НОРБИТ • Москва</div>
+                        </div>
+                        <div class="job-period">Март 2025 — Август 2025 (6 месяцев)</div>
+                    </div>
+
+                    <div class="subsection-title">Обязанности:</div>
+                    <ul>
+                        <li>Разработка микросервисов на Python и Java для интеграции BPMSoft с внешними системами</li>
+                        <li>Реализация REST API для автоматизации обработки заявок и обмена данными</li>
+                        <li>Создание библиотеки валидации данных с бизнес-правилами и типизацией</li>
+                        <li>Разработка средств эмуляции и mock-сервисов для тестирования интеграций</li>
+                        <li>Проведение нагрузочного тестирования и анализ производительности системы</li>
+                        <li>Настройка мониторинга производительности и анализ метрик СУБД (PostgreSQL)</li>
+                        <li>Разработка серверной части на C# в рамках бизнес-процессов BPMSoft</li>
+                        <li>Внедрение CI/CD процессов с использованием Docker и Git</li>
+                        <li>Написание и поддержка unit-тестов с использованием pytest и JUnit</li>
+                    </ul>
+
+                    <div class="subsection-title">Достижения:</div>
+                    <ul>
+                        <li>Сократил время обработки заявок на 30% и снизил количество ошибок на 50% через автоматизацию</li>
+                        <li>Уменьшил ошибки при работе с заявками на 40% благодаря библиотеке валидации данных</li>
+                        <li>Сократил время развертывания микросервисов на 50% через внедрение Docker</li>
+                        <li>Повысил покрытие кода unit-тестами на 60% и сократил дефекты в продакшене на 25%</li>
+                        <li>Оптимизировал производительность системы через кеширование данных (Redis)</li>
+                        <li>Разработал скрипты для автоматизированного сбора технической информации о загрузке серверов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎓 Образование</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Университет</div>
+                        Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики (ИТМО)
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Специальность</div>
+                        Информационные технологии и программирование, Software Engineering
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Год окончания</div>
+                        2026
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Дополнительно</div>
+                        Более 2 лет опыта преподавания дисциплины «Алгоритмы и структуры данных»
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🛠️ Технические навыки</h2>
+
+                <div class="subsection-title">Языки программирования:</div>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bash</span>
+                </div>
+
+                <div class="subsection-title">Тестирование и QA:</div>
+                <div class="skills">
+                    <span class="skill-tag">LoadRunner</span>
+                    <span class="skill-tag">Pytest</span>
+                    <span class="skill-tag">JUnit</span>
+                    <span class="skill-tag">Selenium</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Стратегия тестирования</span>
+                    <span class="skill-tag">Анализ производительности</span>
+                    <span class="skill-tag">Нагрузочное тестирование</span>
+                </div>
+
+                <div class="subsection-title">Backend и API:</div>
+                <div class="skills">
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">ASP.NET</span>
+                    <span class="skill-tag">REST API</span>
+                    <span class="skill-tag">HTTP</span>
+                    <span class="skill-tag">Requests</span>
+                </div>
+
+                <div class="subsection-title">Базы данных:</div>
+                <div class="skills">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MS SQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">SQLAlchemy</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">ORM</span>
+                </div>
+
+                <div class="subsection-title">DevOps и инструменты:</div>
+                <div class="skills">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Windows Server</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">BPMSoft</span>
+                </div>
+
+                <div class="subsection-title">Другие навыки:</div>
+                <div class="skills">
+                    <span class="skill-tag">Алгоритмы и структуры данных</span>
+                    <span class="skill-tag">Оптимизация кода</span>
+                    <span class="skill-tag">Анализ требований</span>
+                    <span class="skill-tag">Постановка задач</span>
+                    <span class="skill-tag">Наставничество</span>
+                    <span class="skill-tag">Мониторинг производительности</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎯 Ключевые компетенции</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Нагрузочное тестирование</div>
+                        Опыт проведения нагрузочных тестов, сбора метрик производительности, анализа узких мест системы
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Разработка эмуляторов</div>
+                        Создание mock-сервисов и средств эмуляции для тестирования интеграций
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Мониторинг и анализ</div>
+                        Настройка мониторинга, сбор технической информации по загрузке оборудования (Windows, Linux)
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Управление дефектами</div>
+                        Регистрация и трекинг дефектов, формирование отчетов, предложения по оптимизации
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📋 Дополнительная информация</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">График работы</div>
+                        Полная занятость, частичная занятость, проектная работа, стажировка
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Формат</div>
+                        Готов к офисной работе в Санкт-Петербурге и удаленной работе
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Гражданство</div>
+                        Россия, есть разрешение на работу
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Языки</div>
+                        Русский — родной
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
